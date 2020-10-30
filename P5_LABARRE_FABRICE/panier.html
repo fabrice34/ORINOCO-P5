@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang=fr>
+<head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta name="description" content="Panier des achats sur Vintageori">
+     <title>Vintageori - mon panier</title>
+     <!--Feuille de stype css-->
+     <link rel="stylesheet" href="style.css" />
+     <link rel="shortcut icon" type="image/png" href="images/LogoOrinoco.png">
+     <!-- Lien pour l'utilisation des fontawesome -->
+     <script src="https://kit.fontawesome.com/e978ae59c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header> 
+        <nav>
+         <a class="navbar" href="index.html">
+             <img src="images/logoOrinoco.png" alt="Info Logo"/>
+         </a>
+         <ul class="navbar-nav">
+          <li class="nav-item">
+           <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link cart" href="panier.html" title="Panier"><i class="fas fa-shopping-cart"></i>Panier<div class="cart__nb"></div></a>
+          </li>
+         </ul>
+         </nav>
+    </header>
+   
+      <!--Le contenu principal est construit entièrement à partir du script panier.js-->
+    <div class="container" id="cart-section"></div>
+
+
+     
+    <footer>
+         <div class="container">
+           <div class="footerpage ">
+               <ul class="listfooter">
+                 <li class="list-item"><a href="ap.html">À propos</a></li>   
+                 <li class="list-item"><a href="vp.html">Vie privée</a></li>
+                 <li class="list-item"><a href="cu.html">Conditions d'utilisations</a></li>
+               </ul>
+           </div>
+         </div>
+    </footer>
+
+  <!--Appel du script qui met à jour le numéro indicant le nombre d'articles dans le panier-->
+  <script src="nombreArticleDansLePanier.js"></script>
+
+  <!--Script permettant de générer le contenu de la page en fonction du panier et de poster la commande-->
+  <script src="panier.js"></script>
+</body>
+</html>
