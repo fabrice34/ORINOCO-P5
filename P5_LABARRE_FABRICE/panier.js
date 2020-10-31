@@ -12,8 +12,8 @@ function displayCart() {
         total = 0; // Réinitialisation du total à 0
 
         section.insertAdjacentHTML("afterbegin", `
-            <h2>Panier</h2>
-            <table class="cart-section__table">
+        <h2>Panier</h2>
+            <table class="cart-section__table" style="margin-top:50px;display:flex;flex-direction:column;align-items:center;">
                 <thead>
                     <tr>
                         <th>Nom</th>
@@ -26,6 +26,7 @@ function displayCart() {
                 <tbody class="cart-section__commande">
                 </tbody>
             </table>
+         
         `);
 
         let commande = document.querySelector(".cart-section__commande");
@@ -43,6 +44,7 @@ function displayCart() {
                     <td>${(product.price * product.quantity/100).toFixed(2).replace(".",",")} €</td>
                     <td><button class="cart-section__delete product-${index}">X</button></td>
                 </tr>
+                
             `);
         })
 

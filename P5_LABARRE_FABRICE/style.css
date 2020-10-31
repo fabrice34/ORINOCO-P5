@@ -48,8 +48,31 @@ nav
   .nav-link
   {
   text-decoration:none;
+  color: #000103;
   } 
-  .cart{display: flex;flex-direction: row;}
+  .cart
+  {
+    display: flex;
+    flex-direction: row;   
+  }
+.cart:hover
+{
+  color: gray;
+}
+.cart__nb
+{
+  display: inline-block;
+  border-radius: 5rem;
+  position: relative;
+  top: 0px;
+  left: 5px;
+  right: 0px;
+  height: 20px;
+  background-color: rgb(248, 7, 7);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
 .container
 {
   text-align: center;
@@ -66,6 +89,7 @@ footer
      left: 0px;
      right: 0px;
      bottom: 0px;
+
      
 }
   .listfooter
@@ -78,9 +102,15 @@ footer
   .listfooter a
   {
     text-decoration: none;
+    color: #000103;
   }
-  #cart-section{text-align: center;}
-
+  #productList,.product-section, #cart-section,#confirmation-section 
+  {
+    text-align: center;
+  }
+  #cart-section{border: 2px solid black;margin:130px 300px 100px 300px;padding:50px;background-color: rgb(240, 171, 234);}
+th{padding-left: 50px;padding-right: 0px;text-align: start;}
+td{padding-left: 10px;padding-right: 10px;text-align: start;}
 @media all and (max-width: 1200px)
 {
     

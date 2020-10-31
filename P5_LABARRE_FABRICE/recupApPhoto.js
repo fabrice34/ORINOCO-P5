@@ -21,11 +21,11 @@ function displayAllProducts(products) {
     products.forEach( product => {
 
         productList.insertAdjacentHTML("beforeend",`
-            <li class="product" style= "border: 2px solid black; border-radius:4px; list-style: none; margin : 100px 450px 100px 450px;padding-bottom:30px;" >
+            <li class="product" style= "border: 2px solid black; border-radius:4px; list-style: none;box-shadow: 0px 6px 6px black; margin : 100px 450px 100px 450px;padding-bottom:30px;" >
                 <h2 class="product__name">${product.name}</h2>
                 <img class="product__img" src="${product.imageUrl}" alt="photo camera" style= "width:300px">
                 <div class="product__price">${(product.price/100).toFixed(2).replace(".",",")}€</div>
-                <a class="product__btn" href="./produit.html?${product._id}">Plus de détails</a>
+                <a class="product__btn" href="./produit.html?${product._id}" style= "border: 2px solid #000103;border-radius: 1rem;box-shadow: 3px 3px 0px black;text-decoration:none;color:#000103;background-color:#c20aa3;">Plus de détails</a>
             </li>
             `
         )
