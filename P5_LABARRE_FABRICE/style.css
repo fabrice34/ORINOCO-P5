@@ -111,6 +111,8 @@ footer
   #cart-section{border: 2px solid black;margin:130px 300px 100px 300px;padding:50px;background-color: rgb(240, 171, 234);}
 th{padding-left: 50px;padding-right: 0px;text-align: start;}
 td{padding-left: 10px;padding-right: 10px;text-align: start;}
+
+.cart-form__group{display: flex;flex-direction: row;justify-content: space-between;}
 @media all and (max-width: 1200px)
 {
     

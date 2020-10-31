@@ -60,7 +60,7 @@ function displayCart() {
 
 /*formulaire de contact pour valider la commande*/
         section.insertAdjacentHTML("beforeend", `
-            <div class="formulaire">
+            <div class="formulaire" style="text-align:start;">
             <p class="">Formulaire à remplir pour valider la commande : </p>
             <form class="cart-form" action="post" type="submit">
                 <div class="cart-form__group">
