@@ -1,3 +1,5 @@
+
+
 const section = document.querySelector("#cart-section");
 let total = 0;
 
@@ -16,6 +18,7 @@ function displayCart() {
             <table class="cart-section__table" style="margin-top:50px;display:flex;flex-direction:column;align-items:center;">
                 <thead>
                     <tr>
+                        <th>Image</th>              
                         <th>Nom</th>
                         <th>Lense</th>
                         <th>Quantité</th>
@@ -38,6 +41,7 @@ function displayCart() {
             
             commande.insertAdjacentHTML("beforeend", `
                 <tr>
+                    <td><img src="${product.imageUrl}" alt="photo camera" style="width:70px;border: 2px solid black;"></td>
                     <td>${product.name}</td>
                     <td>${product.selectedLense}</td>
                     <td><button class="cart-section__remove product-${index}">-</button>${product.quantity}<button class="cart-section__add product-${index}">+</button></td>

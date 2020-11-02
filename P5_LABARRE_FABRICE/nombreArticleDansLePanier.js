@@ -16,7 +16,10 @@ function verifPanier() {
         });
     } 
     div.textContent = nb;
+    console.log("produit ajouter")
 }
+
+
 /* Affichage d'un message d'erreur si la connexion n'a pas pu se faire correctement avec le serveur */
 function displayError() {
     const section = document.querySelector(".pL");

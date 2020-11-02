@@ -66,6 +66,7 @@ function addToCart (product) {
 
     let saveToCartProduct = {
         _id: product._id,
+        imageUrl: product.imageUrl,
         name: product.name,
         price: product.price,
         quantity: 1,
@@ -95,4 +96,7 @@ function addToCart (product) {
     }
 
     verifPanier();
+    alert("le produit a bien été ajouter au panier");
+    
+
 }
