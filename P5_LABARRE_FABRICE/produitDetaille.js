@@ -24,12 +24,12 @@ function displayProduct(product) {
 
     productSection.insertAdjacentHTML("afterbegin", `
         <h2>${product.name}</h2>
-        <img src="${product.imageUrl}" alt="photo camera" style="width:400px;border: 2px solid black;">
+        <img src="${product.imageUrl}" alt="photo camera" style="width:400px;border: 2px solid black;border-radius:2px;">
         <p>${product.description}</p>
-        <div>Prix: ${(product.price/100).toFixed(2).replace(".",",")}€</div>
+        <div class="product__price">Prix: ${(product.price/100).toFixed(2).replace(".",",")}€</div>
         <label for="lense-select">Type de lentille</label>
         <select class="product-section__select" name="" id="lenses-select"></select>
-        <button class="addToCart">Ajouter au panier <i class="fas fa-shopping-cart"></i></button> 
+        <button class="addToCart" style="border:1px solid black;border-radius:2px;background-color:#c20aa3;">Ajouter au panier <i class="fas fa-shopping-cart"></i></button> 
         `
     );
 

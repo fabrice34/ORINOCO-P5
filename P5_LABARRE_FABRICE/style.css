@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&family=Satisfy&display=swap');
+
 body
  {
+  font-family: 'Satisfy', cursive;
     width: 100%;
     height: auto;
-    font-family: sans-serif;
+    font-weight: bolder;
     background-color: #e6eeec;
     color: #000103;
     padding: 0px;
@@ -10,6 +13,7 @@ body
     display: flex;
     flex-direction: column;
     overflow-x:hidden; 
+   
   }
 header
 {
@@ -55,9 +59,9 @@ nav
     display: flex;
     flex-direction: row;   
   }
-.cart:hover
+.cart:hover,.nav-link:hover
 {
-  color: gray;
+  color: rgb(41, 136, 4);
 }
 .cart__nb
 {
@@ -77,7 +81,7 @@ nav
 {
   text-align: center;
 }
-
+h2{color: rgb(22, 22, 22);}
 
 footer
 {
@@ -88,10 +92,9 @@ footer
      position: fixed;
      left: 0px;
      right: 0px;
-     bottom: 0px;
-
-     
+     bottom: 0px;    
 }
+
   .listfooter
   {
     display: flex;
@@ -104,15 +107,44 @@ footer
     text-decoration: none;
     color: #000103;
   }
+  .product__price
+  {
+    color: rgb(161, 24, 14);
+    margin-bottom:10px; 
+  }
+ 
   #productList,.product-section, #cart-section,#confirmation-section 
   {
     text-align: center;
   }
-  #cart-section{border: 2px solid black;border-radius: 2rem;box-shadow: 0px 6px 6px black;margin:130px 300px 100px 300px;padding:50px;background-color: rgb(240, 171, 234);}
-th{padding-left: 50px;padding-right: 0px;text-align: start;}
-td{padding-left: 10px;padding-right: 10px;text-align: start;}
+  
+  #cart-section
+  {
+    border: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 0px 6px 6px black;
+    margin:130px 300px 100px 300px;
+    padding:50px;
+    background-color: rgb(240, 171, 234);
+  }
+ th
+ {
+   padding-left: 50px;
+   padding-right: 0px;
+   text-align: start;
+ }
+td
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: start;
+}
 
-.cart-form__group{display: flex;flex-direction: row;justify-content: space-between;}
+.cart-form__group
+{display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 @media all and (max-width: 1200px)
 {
     
@@ -133,7 +165,29 @@ td{padding-left: 10px;padding-right: 10px;text-align: start;}
       width:100px;
       height: 30px;
     }
-    
+    th
+    {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: start;
+    }
+td
+{
+  padding-left:0px;
+  padding-right: 0px;
+  text-align: start;
+}
+#cart-section
+{
+  margin:130px 150px 100px 150px;
+  padding:0px;
+  background-color: rgb(240, 171, 234);
+} 
+.formulaire
+{
+  padding-left: 5px;
+  padding-right: 5px;
+} 
 }
 
 @media all and (max-width: 879px)
@@ -144,7 +198,3 @@ td{padding-left: 10px;padding-right: 10px;text-align: start;}
     }
 }
 
-@media all and (max-width: 599px)
-{
-  
-}

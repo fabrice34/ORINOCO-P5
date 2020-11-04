@@ -87,7 +87,7 @@ function displayCart() {
                     <label for="email">Email : </label>
                     <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+[.][a-z]{2,4}" placeholder="exemple@email.com" maxlength="30" required />
                 </div>
-                <button id="submit-btn">Valider le panier</button>
+                <button id="submit-btn" style="border:2 solid black;border-radius:2rem;padding:2px;margin:10px;background-color:#c20aa3;color:#fff;">Valider le panier</button>
             </form>
             </div>
         `);
