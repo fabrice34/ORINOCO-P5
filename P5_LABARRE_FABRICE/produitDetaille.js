@@ -96,7 +96,6 @@ function addToCart (product) {
     }
 
     verifPanier();
-    alert("le produit a bien été ajouter au panier");
-    
+    alert("le produit a bien été ajouter au panier");    
 
 }

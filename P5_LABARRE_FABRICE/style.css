@@ -145,6 +145,14 @@ td
   flex-direction: row;
   justify-content: space-between;
 }
+#cart-section
+{
+  margin-top: 160px;
+}
+#confirmation-section
+{
+  margin-top: 100px;
+}
 @media all and (max-width: 1200px)
 {
     
