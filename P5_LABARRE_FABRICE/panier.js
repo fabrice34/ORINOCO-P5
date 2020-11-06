@@ -19,7 +19,7 @@ function displayCart() {
                 <thead>
                     <tr>
                         <th>Image</th>              
-                        <th>Nom</th>
+                        <th>Désignation</th>
                         <th>Lense</th>
                         <th>Quantité</th>
                         <th>Prix</th>
